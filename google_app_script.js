@@ -6,13 +6,13 @@ function renameColumnsAndStatusAndLogMissingCaseInsensitiveWithFirstWordCheck() 
   try {
     // Fetch and parse column synonyms with case insensitivity
     var columnMapping = fetchAndParseSynonyms(
-      "https://raw.githubusercontent.com/MuckRock/foia-log-explorer-vacuumizer/main/synonyms.txt",
+      "https://raw.githubusercontent.com/MuckRock/foia-log-explorer-standardizer/main/synonyms.txt",
       true
     );
 
     // Fetch and parse status synonyms with case insensitivity
     var statusMapping = fetchAndParseSynonyms(
-      "https://raw.githubusercontent.com/MuckRock/foia-log-explorer-vacuumizer/main/status_synonyms.txt",
+      "https://raw.githubusercontent.com/MuckRock/foia-log-explorer-standardizer/main/status_synonyms.txt",
       true
     );
 
