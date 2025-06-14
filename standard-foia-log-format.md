@@ -60,7 +60,16 @@ The SFLF will consist of the following standardized columns:
 
 ### 8. status
 
-- **Definition**: The current status of the request, as roughly mapped to MuckRock's potential statuses. These statuses might have less-than-obvious meanings due to their historical nature, such as 'processed' referring to any request that is being currently worked on by an agency, while 'abandoned' can refer to a request that has been withdrawn.
+- **Definition**: The current status of the request, as roughly mapped to MuckRock's potential statuses. These statuses might have less-than-obvious meanings due to their historical nature, such as 'processed' referring to any request that is being currently worked on by an agency, while 'abandoned' can refer to a request that has been withdrawn. The agency might not have categories that perfectly align with the below. In these cases, a best effort match should be made.
+  - processed: The agency has accepted the request and is processing the request. The requester is awaiting a final outcome.
+  - appealing: A request currently in the administrative appeals process.
+  - fix: The agency is awaiting an update from the requester or for the request to be perfected.
+  - payment: A payment is currently rquired to finish processing the request.
+  - lawsuit: The request is currently in litigation.
+  - rejected: The request is rejected as either not a proper FOIA request or under a certain exemption.
+  - no_docs: The request was processed but the agency found no responsive material.
+  - done: A succesfully completed or mostly completed request with responsive documents.
+  - partial: A request where the requester has received some of the materials they've asked for, but more materials are expected.
 - **Type**: Enumerated String
 - **Allowed Values**: "processed", "appealing", "fix", "payment", "lawsuit", "rejected", "no_docs", "done", "partial", "abandoned", or empty
 - **Example**: "processed"
